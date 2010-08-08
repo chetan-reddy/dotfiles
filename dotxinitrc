@@ -1,0 +1,9 @@
+if [ "$1" = "-lock" ]; then
+#	xlock -grabserver &
+	xtrlock &
+fi
+xmodmap ~/.xmodmaprc &
+xbindkeys &
+chromium-browser &
+exec ratpoison
+
