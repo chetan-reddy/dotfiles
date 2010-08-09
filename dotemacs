@@ -1,0 +1,1 @@
+(setq backup-by-copying-when-linked t) 
