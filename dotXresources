@@ -1,0 +1,6 @@
+!URxvt*font:		xft:Bitstream Vera Sans Mono:style=Regular:pixelsize=13
+!URxvt*font:		xft:Bitstream Vera Sans Mono:style=Roman
+URxvt*font:		xft:Terminus:pixelsize=15
+URxvt*background:	#000000
+URxvt*foreground:	#FFFFFF
+!URxvt.perl-ext-common: default,tabbed

@@ -1,0 +1,15 @@
+escape less
+
+definekey top Menu readkey root
+definekey root Menu link less
+bind Menu other
+bind less other
+
+bind c exec urxvtc
+bind C-c exec urxvtc
+bind C exec x-terminal-emulator
+
+bind d exec ratpoison -c "echo `date +'%r - %A %n    %D - %B'`  `cal | tail +2 | sed -e 's/^Su/\n\n Su/' -e 's/.*/ & /' -e \"s/\ $(date +%e)\ /\<$(date +%e)\>/\"`"
+bind D exec ratpoison -c "echo `cal`"
+
+alias reload exec ratpoison -c "source $HOME/.ratpoisonrc"

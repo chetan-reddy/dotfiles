@@ -2,8 +2,10 @@ if [ "$1" = "-lock" ]; then
 #	xlock -grabserver &
 	xtrlock &
 fi
-xmodmap ~/.xmodmaprc &
-xbindkeys &
+xmodmap ~/.xmodmaprc 
+xrdb ~/.Xresources 
+xbindkeys
+urxvtd -o -f
+eval `ssh-agent`
 chromium-browser &
 exec ratpoison
-
