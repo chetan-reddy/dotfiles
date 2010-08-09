@@ -1,9 +1,4 @@
-escape less
-
-definekey top Menu readkey root
-definekey root Menu link less
-bind Menu other
-bind less other
+escape Menu
 
 bind c exec urxvtc
 bind C-c exec urxvtc
