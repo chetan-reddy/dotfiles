@@ -1,2 +1,34 @@
 ;http://kb.iu.edu/data/acxl.html
 (setq backup-by-copying-when-linked t) 
+
+
+(set-foreground-color "white") ; Set region background color
+(set-background-color "black") ; Set emacs bg color
+(set-cursor-color "white")
+
+(set-default-font "terminus")
+
+(setq inhibit-startup-message t)
+
+(setq user-full-name "Chetan Reddy")
+;(setq user-mail-address "")
+
+;; disable the menubar on startup
+(menu-bar-mode nil)
+;; disable the toolbar on startup
+(tool-bar-mode nil)
+
+;; syntax highlighting
+(global-font-lock-mode t)
+
+(column-number-mode t)
+
+(global-set-key [home]     'beginning-of-buffer) ; [Home]
+(global-set-key [end]      'end-of-buffer)       ; [End]
+
+(global-set-key [f5]
+                '(lambda () "Refresh the buffer from disk(prompt if modified)"
+                   (interactive)
+                   (revert-buffer t (not (buffer-modified-p)) t)
+                   )
+                )

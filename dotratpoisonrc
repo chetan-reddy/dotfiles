@@ -1,5 +1,9 @@
 escape Menu
 
+bind Menu windows
+bind o other
+bind C-o other
+
 bind c exec urxvtc
 bind C-c exec urxvtc
 bind C exec x-terminal-emulator
@@ -8,3 +12,5 @@ bind d exec ratpoison -c "echo `date +'%r - %A %n    %D - %B'`  `cal | tail +2 |
 bind D exec ratpoison -c "echo `cal`"
 
 alias reload exec ratpoison -c "source $HOME/.ratpoisonrc"
+
+bind O exec sudo -u sandbox -i '/home/sandbox/opera-10.61-6430.x86_64.linux/opera && cleanup'

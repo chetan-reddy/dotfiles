@@ -7,5 +7,6 @@ xrdb ~/.Xresources
 xbindkeys
 urxvtd -o -f
 eval `ssh-agent`
+export SSH_AGENT_PID
 chromium-browser &
 exec ratpoison
