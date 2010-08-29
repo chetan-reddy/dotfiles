@@ -4,9 +4,14 @@ if [ "$1" = "-lock" ]; then
 fi
 xmodmap ~/.xmodmaprc 
 xrdb ~/.Xresources 
-xbindkeys
+#xbindkeys
 urxvtd -o -f
 eval `ssh-agent`
 export SSH_AGENT_PID
-chromium-browser &
-exec ratpoison
+xsetroot -cursor_name left_ptr
+#chromium-browser &
+urxvtc &
+#exec ratpoison
+#exec xmonad
+xmonad
+kill $SSH_AGENT_PID
